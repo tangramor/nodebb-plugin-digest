@@ -1,0 +1,30 @@
+{
+  "author": {
+    "name": "tangramor",
+    "email": "tangramor@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/tangramor/nodebb-plugin-digest/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A nodebb-plugin-digest plugin for NodeBB which allows admin or moderators to mark a post as Digest one",
+  "homepage": "https://github.com/tangramor/nodebb-plugin-digest#readme",
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "digest",
+    "remark"
+  ],
+  "license": "BSD-2-Clause",
+  "main": "library.js",
+  "name": "nodebb-plugin-digest",
+  "nbbpm": {
+    "compatibility": "^0.9.0 || ^1.0.0 || ^1.1.0 || ^1.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangramor/nodebb-plugin-digest.git"
+  },
+  "version": "0.0.1"
+}

@@ -1,0 +1,41 @@
+{
+	"id": "nodebb-plugin-digest",
+	"name": "Digest Plugin for NodeBB",
+	"description": "A nodebb-plugin-digest plugin for NodeBB which allows admin or moderators to mark a post as Digest one",
+	"url": "https://github.com/tangramor/nodebb-plugin-digest.git",
+	"library": "./library.js",
+	"hooks": [
+		{
+			"hook": "static:app.load", "method": "init"
+		},
+		{
+			"hook": "filter:config.get", "method": "appendConfig"
+		},
+		{
+			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
+		},
+		{
+			"hook": "filter:topics.get", "method": "getTopics"
+		},
+		{
+			"hook": "filter:topic.thread_tools", "method": "addThreadTool"
+		},
+		{
+			"hook": "filter:navigation.available", "method": "addNavigation"
+		},
+		{
+			"hook": "filter:rewards.conditions", "method": "getConditions"
+		}
+	],
+	"languages": "./languages",
+	"staticDirs": {
+		"static": "./static"
+	},
+	"less": [
+		"static/style.less"
+	],
+	"scripts": [
+		"static/lib/main.js"
+	],
+	"templates": "static/templates"
+}
